@@ -35,7 +35,7 @@ public class Journal
 
     public void SaveToFile(string file)
     {
-        string directoryPath = @"C:\Users\taylo\OneDrive\Documents\CSE210-HW\prove\Develop02\";
+        string directoryPath = @"C:\Users\taylo\OneDrive\Documents\CSE-210-HW\prove\Develop02\";
         string filePath = Path.Combine(directoryPath, file);
         try
     {
@@ -56,7 +56,7 @@ public class Journal
 
     public void LoadFromFile(string file)
     {
-        string filePath = Path.Combine(@"C:\Users\taylo\OneDrive\Documents\CSE210-HW\prove\Develop02\", file);
+        string filePath = Path.Combine(@"C:\Users\taylo\OneDrive\Documents\CSE-210-HW\prove\Develop02\", file);
 
     Entries.Clear(); // Clear existing entries before loading from file
 
