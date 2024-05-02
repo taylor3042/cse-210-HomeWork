@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-HomeWork\\prepare\\Learning03\\Learning03.csproj": {}
+    "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-hw\\prepare\\Learning03\\Learning03.csproj": {}
   },
   "projects": {
-    "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-HomeWork\\prepare\\Learning03\\Learning03.csproj": {
+    "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-hw\\prepare\\Learning03\\Learning03.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-HomeWork\\prepare\\Learning03\\Learning03.csproj",
+        "projectUniqueName": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-hw\\prepare\\Learning03\\Learning03.csproj",
         "projectName": "Learning03",
-        "projectPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-HomeWork\\prepare\\Learning03\\Learning03.csproj",
+        "projectPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-hw\\prepare\\Learning03\\Learning03.csproj",
         "packagesPath": "C:\\Users\\taylo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-HomeWork\\prepare\\Learning03\\obj\\",
+        "outputPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-hw\\prepare\\Learning03\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\taylo\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-HomeWork\\sandbox\\Sandbox\\Sandbox.csproj",
+      "projectUniqueName": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-hw\\sandbox\\Sandbox\\Sandbox.csproj",
       "projectName": "Sandbox",
-      "projectPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-HomeWork\\sandbox\\Sandbox\\Sandbox.csproj",
+      "projectPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-hw\\sandbox\\Sandbox\\Sandbox.csproj",
       "packagesPath": "C:\\Users\\taylo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-HomeWork\\sandbox\\Sandbox\\obj\\",
+      "outputPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-hw\\sandbox\\Sandbox\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\taylo\\AppData\\Roaming\\NuGet\\NuGet.Config"

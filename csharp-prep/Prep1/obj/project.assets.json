@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-HomeWork\\csharp-prep\\Prep1\\Prep1.csproj",
+      "projectUniqueName": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-hw\\csharp-prep\\Prep1\\Prep1.csproj",
       "projectName": "Prep1",
-      "projectPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-HomeWork\\csharp-prep\\Prep1\\Prep1.csproj",
+      "projectPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-hw\\csharp-prep\\Prep1\\Prep1.csproj",
       "packagesPath": "C:\\Users\\taylo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-HomeWork\\csharp-prep\\Prep1\\obj\\",
+      "outputPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-hw\\csharp-prep\\Prep1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\taylo\\AppData\\Roaming\\NuGet\\NuGet.Config"

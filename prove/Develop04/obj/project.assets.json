@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-HomeWork\\prove\\Develop04\\Develop04.csproj",
+      "projectUniqueName": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-hw\\prove\\Develop04\\Develop04.csproj",
       "projectName": "Develop04",
-      "projectPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-HomeWork\\prove\\Develop04\\Develop04.csproj",
+      "projectPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-hw\\prove\\Develop04\\Develop04.csproj",
       "packagesPath": "C:\\Users\\taylo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-HomeWork\\prove\\Develop04\\obj\\",
+      "outputPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-hw\\prove\\Develop04\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\taylo\\AppData\\Roaming\\NuGet\\NuGet.Config"

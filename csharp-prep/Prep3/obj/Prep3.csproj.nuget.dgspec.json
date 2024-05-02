@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-HomeWork\\csharp-prep\\Prep3\\Prep3.csproj": {}
+    "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-hw\\csharp-prep\\Prep3\\Prep3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-HomeWork\\csharp-prep\\Prep3\\Prep3.csproj": {
+    "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-hw\\csharp-prep\\Prep3\\Prep3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-HomeWork\\csharp-prep\\Prep3\\Prep3.csproj",
+        "projectUniqueName": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-hw\\csharp-prep\\Prep3\\Prep3.csproj",
         "projectName": "Prep3",
-        "projectPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-HomeWork\\csharp-prep\\Prep3\\Prep3.csproj",
+        "projectPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-hw\\csharp-prep\\Prep3\\Prep3.csproj",
         "packagesPath": "C:\\Users\\taylo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-HomeWork\\csharp-prep\\Prep3\\obj\\",
+        "outputPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-hw\\csharp-prep\\Prep3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\taylo\\AppData\\Roaming\\NuGet\\NuGet.Config"

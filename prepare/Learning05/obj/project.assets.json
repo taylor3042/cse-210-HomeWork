@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-HomeWork\\prepare\\Learning05\\Learning05.csproj",
+      "projectUniqueName": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-hw\\prepare\\Learning05\\Learning05.csproj",
       "projectName": "Learning05",
-      "projectPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-HomeWork\\prepare\\Learning05\\Learning05.csproj",
+      "projectPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-hw\\prepare\\Learning05\\Learning05.csproj",
       "packagesPath": "C:\\Users\\taylo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-HomeWork\\prepare\\Learning05\\obj\\",
+      "outputPath": "C:\\Users\\taylo\\OneDrive\\Documents\\cse-210-hw\\prepare\\Learning05\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\taylo\\AppData\\Roaming\\NuGet\\NuGet.Config"
