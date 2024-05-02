@@ -1,0 +1,14 @@
+C:\Users\taylo\OneDrive\Documents\cse210-hw\prove\Develop02\bin\Debug\net8.0\Develop02.exe
+C:\Users\taylo\OneDrive\Documents\cse210-hw\prove\Develop02\bin\Debug\net8.0\Develop02.deps.json
+C:\Users\taylo\OneDrive\Documents\cse210-hw\prove\Develop02\bin\Debug\net8.0\Develop02.runtimeconfig.json
+C:\Users\taylo\OneDrive\Documents\cse210-hw\prove\Develop02\bin\Debug\net8.0\Develop02.dll
+C:\Users\taylo\OneDrive\Documents\cse210-hw\prove\Develop02\bin\Debug\net8.0\Develop02.pdb
+C:\Users\taylo\OneDrive\Documents\cse210-hw\prove\Develop02\obj\Debug\net8.0\Develop02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\taylo\OneDrive\Documents\cse210-hw\prove\Develop02\obj\Debug\net8.0\Develop02.AssemblyInfoInputs.cache
+C:\Users\taylo\OneDrive\Documents\cse210-hw\prove\Develop02\obj\Debug\net8.0\Develop02.AssemblyInfo.cs
+C:\Users\taylo\OneDrive\Documents\cse210-hw\prove\Develop02\obj\Debug\net8.0\Develop02.csproj.CoreCompileInputs.cache
+C:\Users\taylo\OneDrive\Documents\cse210-hw\prove\Develop02\obj\Debug\net8.0\Develop02.dll
+C:\Users\taylo\OneDrive\Documents\cse210-hw\prove\Develop02\obj\Debug\net8.0\refint\Develop02.dll
+C:\Users\taylo\OneDrive\Documents\cse210-hw\prove\Develop02\obj\Debug\net8.0\Develop02.pdb
+C:\Users\taylo\OneDrive\Documents\cse210-hw\prove\Develop02\obj\Debug\net8.0\Develop02.genruntimeconfig.cache
+C:\Users\taylo\OneDrive\Documents\cse210-hw\prove\Develop02\obj\Debug\net8.0\ref\Develop02.dll
