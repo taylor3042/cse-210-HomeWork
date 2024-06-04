@@ -1,65 +1,61 @@
-using System;
-using System.Collections.Generic;
-
-class Address
+public class Address
 {
     private string street;
     private string city;
     private string state;
-    private string country;
+    private string zipCode;
 
-    public Address(string street, string city, string state, string country)
+    public Address(string street, string city, string state, string zipCode)
     {
         this.street = street;
         this.city = city;
         this.state = state;
-        this.country = country;
+        this.zipCode = zipCode;
     }
 
     public string GetFullAddress()
     {
-        return $"{street}, {city}, {state}, {country}";
+        return $"{street}, {city}, {state} {zipCode}";
     }
 }
 
-abstract class Event
+public class Event
 {
     private string title;
     private string description;
-    private string date;
-    private string time;
+    private DateTime dateTime;
     private Address address;
 
-    public Event(string title, string description, string date, string time, Address address)
+    public Event(string title, string description, DateTime dateTime, Address address)
     {
         this.title = title;
         this.description = description;
-        this.date = date;
-        this.time = time;
+        this.dateTime = dateTime;
         this.address = address;
     }
 
-    public string GetStandardDetails()
+    public virtual string GetStandardDetails()
     {
-        return $"Title: {title}\nDescription: {description}\nDate: {date}\nTime: {time}\nAddress: {address.GetFullAddress()}";
+        return $"**Event:** {title}\n**Description:** {description}\n**Date & Time:** {dateTime.ToString("MMMM d, yyyy h:mm tt")}\n**Location:** {address.GetFullAddress()}";
     }
 
-    public abstract string GetFullDetails();
-    public abstract string GetShortDescription();
-
-    protected string GetCommonDetails()
+    public virtual string GetFullDetails()
     {
-        return $"Title: {title}\nDate: {date}";
+        return GetStandardDetails();
+    }
+
+    public virtual string GetShortDescription()
+    {
+        return $"{this.GetType().Name}: {title} - {dateTime.ToString("MMMM d")}";
     }
 }
 
-class Lecture : Event
+public class Lecture : Event
 {
     private string speaker;
     private int capacity;
 
-    public Lecture(string title, string description, string date, string time, Address address, string speaker, int capacity)
-        : base(title, description, date, time, address)
+    public Lecture(string title, string description, DateTime dateTime, Address address, string speaker, int capacity) : base(title, description, dateTime, address)
     {
         this.speaker = speaker;
         this.capacity = capacity;
@@ -67,88 +63,51 @@ class Lecture : Event
 
     public override string GetFullDetails()
     {
-        return $"{GetStandardDetails()}\nEvent Type: Lecture\nSpeaker: {speaker}\nCapacity: {capacity}";
-    }
-
-    public override string GetShortDescription()
-    {
-        return $"Type: Lecture\n{GetCommonDetails()}";
+        return base.GetFullDetails() + $"\n**Speaker:** {speaker}\n**Capacity:** {capacity}";
     }
 }
 
-class Reception : Event
+public class Reception : Event
 {
     private string rsvpEmail;
 
-    public Reception(string title, string description, string date, string time, Address address, string rsvpEmail)
-        : base(title, description, date, time, address)
+    public Reception(string title, string description, DateTime dateTime, Address address, string rsvpEmail) : base(title, description, dateTime, address)
     {
         this.rsvpEmail = rsvpEmail;
     }
 
     public override string GetFullDetails()
     {
-        return $"{GetStandardDetails()}\nEvent Type: Reception\nRSVP Email: {rsvpEmail}";
-    }
-
-    public override string GetShortDescription()
-    {
-        return $"Type: Reception\n{GetCommonDetails()}";
+        return base.GetFullDetails() + $"\n**RSVP Email:** {rsvpEmail}";
     }
 }
 
-class OutdoorGathering : Event
+public class OutdoorGathering : Event
 {
-    private string weatherForecast;
+    private string weatherForecast; // Placeholder for future weather integration
 
-    public OutdoorGathering(string title, string description, string date, string time, Address address, string weatherForecast)
-        : base(title, description, date, time, address)
+    public OutdoorGathering(string title, string description, DateTime dateTime, Address address, string weatherForecast) : base(title, description, dateTime, address)
     {
-        this.weatherForecast = weatherForecast;
+        this.weatherForecast = weatherForecast; // Replace with actual weather data retrieval
     }
 
     public override string GetFullDetails()
     {
-        return $"{GetStandardDetails()}\nEvent Type: Outdoor Gathering\nWeather: {weatherForecast}";
-    }
-
-    public override string GetShortDescription()
-    {
-        return $"Type: Outdoor Gathering\n{GetCommonDetails()}";
+        return base.GetFullDetails() + $"\n**Weather Forecast:** {weatherForecast}";
     }
 }
 
-class Program
+public class Program
 {
-    static void Main(string[] args)
+    public static void Main(string[] args)
     {
-        // Create addresses
-        Address address1 = new Address("123 Main St", "New York", "NY", "USA");
-        Address address2 = new Address("456 Elm St", "Los Angeles", "CA", "USA");
-        Address address3 = new Address("789 Oak St", "Chicago", "IL", "USA");
+        // Create events of each type
+        Event lecture = new Lecture("Coding for Everyone", "Learn the basics of Coding", new DateTime(2024, 10, 26, 18, 0, 0), new Address("123 Main St", "Anytown", "CA", "12345"), "expert@ai.com", 50);
+        Event reception = new Reception("Company Holiday Party", "Celebrate the holidays with colleagues!", new DateTime(2024, 12, 15, 19, 0, 0), new Address("567 Elm St", "Big City", "NY", "98765"), "party@company.com");
+        Event gathering = new OutdoorGathering("Community Picnic", "Bring a dish to share and enjoy the outdoors!", new DateTime(2024, 08, 10, 12, 0, 0), new Address("City Park", "Anytown", "CA", "12345"), "Sunny and warm!");
 
-        // Create events
-        Lecture lecture = new Lecture("AI in Healthcare", "A lecture on the impact of AI in healthcare.", "2024-06-01", "10:00 AM", address1, "Dr. John Smith", 100);
-        Reception reception = new Reception("Tech Meetup", "A networking event for tech enthusiasts.", "2024-06-15", "6:00 PM", address2, "rsvp@techmeetup.com");
-        OutdoorGathering outdoorGathering = new OutdoorGathering("Music Festival", "An outdoor music festival with various artists.", "2024-07-10", "3:00 PM", address3, "Sunny with a chance of clouds");
+        // Print marketing messages for each event
+        Console.WriteLine("**Lecture Details**\n" + lecture.GetStandardDetails() + "\n");
+        Console.WriteLine("**Lecture Full Details**\n" + lecture.GetFullDetails() + "\n");
+        Console.WriteLine("**Lecture Short Description**\n" + lecture.
 
-        // List of events
-        List<Event> events = new List<Event> { lecture, reception, outdoorGathering };
-
-        // Display information for each event
-        foreach (Event eventItem in events)
-        {
-            Console.WriteLine("Standard Details:");
-            Console.WriteLine(eventItem.GetStandardDetails());
-            Console.WriteLine();
-
-            Console.WriteLine("Full Details:");
-            Console.WriteLine(eventItem.GetFullDetails());
-            Console.WriteLine();
-
-            Console.WriteLine("Short Description:");
-            Console.WriteLine(eventItem.GetShortDescription());
-            Console.WriteLine();
-        }
-    }
-}
